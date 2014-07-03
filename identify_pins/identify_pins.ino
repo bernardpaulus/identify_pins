@@ -5,9 +5,9 @@
 // abbreviations:
 // MS = millisecond
 int FIRST_FLASH_DURATION_MS = 3000;
-int FLASH_SEPARATION_DURATION_MS = 500;
-int PIN_NUMBER_FLASH_DURATION_MS = 500;
-int DELAY_BEFORE_NEXT_LOOP_MS = 5000;
+int FLASH_SEPARATION_DURATION_MS = 250;
+int PIN_NUMBER_FLASH_DURATION_MS = 250;
+int DELAY_BEFORE_NEXT_LOOP_MS = 1000;
 
 int start_pin_range = 0;
 int end_pin_range_inclusive = 4;
