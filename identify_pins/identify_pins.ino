@@ -10,17 +10,11 @@ int PIN_NUMBER_FLASH_DURATION_MS = 250;
 int DELAY_BEFORE_NEXT_LOOP_MS = 1000;
 
 int start_pin_range = 0;
-int end_pin_range_inclusive = 4;
+int end_pin_range_inclusive = 16;
 
 // the setup routine runs once when you press reset:
 void setup() {                
   initialize_all_pins_as_output();
-}
-
-void initialize_all_pins_as_output() {
-  for (int i = start_pin_range; i <= end_pin_range_inclusive; i++) {
-    pinMode(i, OUTPUT);
-  }
 }
 
 // the loop routine runs over and over again forever:
@@ -28,6 +22,12 @@ void loop() {
   flash_all_pins(FIRST_FLASH_DURATION_MS);
   flash_number_of_each_pin_on_pin();
   blank(DELAY_BEFORE_NEXT_LOOP_MS);
+}
+
+void initialize_all_pins_as_output() {
+  for (int i = start_pin_range; i <= end_pin_range_inclusive; i++) {
+    pinMode(i, OUTPUT);
+  }
 }
 
 void flash_all_pins(int duration) {
