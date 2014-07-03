@@ -45,9 +45,9 @@ Connect at least a pin like this:
       Ground  _____
        GND    /////
        
-Compile and load the  in your microcontroller, and you're done!
+Compile and load `identify_pins/identify_pins.ino`  in your microcontroller, and you're done!
 
 License
 -------
 
-public domain duh
+this is very proprietary: see LICENSE.txt for the exact details.
