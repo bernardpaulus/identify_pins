@@ -10,7 +10,7 @@ int PIN_NUMBER_FLASH_DURATION_MS = 250;
 int DELAY_BEFORE_NEXT_LOOP_MS = 1000;
 
 int start_pin_range = 0;
-int end_pin_range_inclusive = 16;
+int end_pin_range_inclusive = 4;
 
 // the setup routine runs once when you press reset:
 void setup() {                
